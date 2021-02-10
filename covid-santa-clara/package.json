@@ -1,0 +1,25 @@
+{
+  "name": "deckgl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --output-path ./public",
+    "start": "webpack-dev-server --content-base ./public --output-path ./public --hot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv-webpack": "^6.0.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "@deck.gl/aggregation-layers": "^8.4.2",
+    "@deck.gl/core": "^8.4.2",
+    "@deck.gl/layers": "^8.4.2",
+    "mapbox-gl": "^2.1.0"
+  }
+}
