@@ -2,6 +2,7 @@ import "intersection-observer";
 import scrollama from "scrollama";
 
 const scroll = document.querySelector("#scroll");
+const figure = document.querySelector("#figure");
 const step = scroll.querySelectorAll(".step");
 
 const scroller = scrollama();
@@ -11,7 +12,11 @@ function handleResize() {
     const v = Math.floor(window.innerHeight * 0.25);
     step.style.padding = v + "px 0px";
   });
+  var figureHeight = window.innerHeight / 2;
+  var figureMarginTop = (window.innerHeight - figureHeight) / 2;
 
+  figure.style.height = figureHeight + "px";
+  figure.style.top = figureMarginTop + "px";
   scroller.resize();
 }
 
