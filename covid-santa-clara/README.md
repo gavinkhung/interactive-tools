@@ -1,21 +1,15 @@
-# Deck.gl + Google Maps
+# Santa Clara County COVID-19 Case Visualization
 
-Build amazing data visualizations with Deck.gl and Google Maps JS. 
+Built with Deck.gl and Javascript
 
-📼 Watch the [Deck.gl Google Maps Lesson](https://fireship.io/lessons/deckgl-google-maps-tutorial)
+## Serving the website locally
 
-☠️ Explore the live [Gun Violence Demo](https://us-gun-violence.web.app/)
-
-## Run it
-
-Update the Google Maps API key in the `index.html` file. 
-
-```
-git clone <this-repo> 
-
+```bash
 npm install
-npm start
+npm run start
 ```
 
+## Data Source
 
-Data contains over 140,000 U.S. gun-related incidents from 2013-2018 from http://www.gunviolencearchive.org/
+[Santa Clara County Data Portal](https://data.sccgov.org/COVID-19/COVID-19-cases-by-zip-code-of-residence/j2gj-bg6c)
+[Zip Code to Lat Long](https://gist.github.com/erichurst/7882666)
