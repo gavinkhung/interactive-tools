@@ -1,3 +1,5 @@
+import "./style.css";
+
 import "intersection-observer";
 import scrollama from "scrollama";
 
@@ -9,14 +11,17 @@ const scroller = scrollama();
 
 function handleResize() {
   step.forEach(function (step) {
-    const v = Math.floor(window.innerHeight * 0.25);
-    step.style.padding = v + "px 0px";
+    const stepH = Math.floor(window.innerHeight * 0.5);
+    step.style.paddingTop = stepH + "px";
+    step.style.paddingBottom = stepH + "px";
   });
-  var figureHeight = window.innerHeight / 2;
-  var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+  const figureHeight = window.innerHeight / 2;
+  const figureMarginTop = (window.innerHeight - figureHeight) / 2;
 
   figure.style.height = figureHeight + "px";
   figure.style.top = figureMarginTop + "px";
+
   scroller.resize();
 }
 
@@ -38,14 +43,11 @@ const init = () => {
   // set random padding for different step heights (not required)
   handleResize();
 
-  // 1. setup the scroller with the bare-bones options
-  // 		this will also initialize trigger observations
-  // 2. bind scrollama event handlers (this can be chained like below)
   scroller
     .setup({
       step: "#scroll .step",
       // debug: true,
-      offset: 0.5,
+      // offset: 0.5,
     })
     .onStepEnter(handleStepEnter)
     .onStepExit(handleStepExit);
