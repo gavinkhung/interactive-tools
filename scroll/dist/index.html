@@ -5,17 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #figure {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+      #figure > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
-  <body class="space-y-8 px-4">
-    <div class="mx-auto prose prose-xl">
+  <body class="space-y-16 px-4">
+    <!-- <div class="mx-auto prose prose-xl">
       <img src="https://source.unsplash.com/daily" />
       <h1>Article name</h1>
       <h2>Deck</h2>
       <p><a href="">Name</a>, Staff Writer</p>
       <p>May 5, 2021</p>
       <hr />
-    </div>
-
+    </div> -->
+    <div class="bg-gray-400"></div>
     <div class="mx-auto prose prose-xl">
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. A magni et
@@ -44,12 +61,16 @@
         </li>
       </ul>
     </div>
-    <div class="relative bg-red-100">
+    <div class="relative">
       <div id="figure" class="h-screen sticky">
-        <h1 class="text-center text-9xl">figure</h1>
+        <div id="map"></div>
+        <canvas id="deck-canvas"></canvas>
       </div>
       <div id="scroll" class="relative">
-        <div class="step bg-opacity-50 w-1/2 sm:w-1/4 prose px-2" data-step="a">
+        <div
+          class="scatter-layer step bg-opacity-50 w-1/2 sm:w-1/4 prose px-2"
+          data-step="a"
+        >
           <h3>title</h3>
           <p class="">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
@@ -59,7 +80,10 @@
             fuga expedita laudantium vero quia, sequi velit laborum dignissimos
           </p>
         </div>
-        <div class="step bg-opacity-50 w-1/2 sm:w-1/4 prose px-2" data-step="b">
+        <div
+          class="text-layer step bg-opacity-50 w-1/2 sm:w-1/4 prose px-2"
+          data-step="b"
+        >
           <h3>title</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nobis

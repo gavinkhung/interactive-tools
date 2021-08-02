@@ -1,4 +1,5 @@
 const path = require("path");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   mode: "development",
@@ -29,5 +30,11 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, "dist"),
     watchContentBase: true,
+  },
+  plugins: [new Dotenv()],
+  resolve: {
+    fallback: {
+      util: require.resolve("util/"),
+    },
   },
 };

@@ -26,8 +26,14 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@deck.gl/core": "^8.5.0",
+    "@deck.gl/layers": "^8.5.0",
     "@tailwindcss/typography": "^0.4.1",
+    "deck.gl": "^8.5.0",
+    "dotenv-webpack": "^7.0.3",
     "intersection-observer": "^0.12.0",
-    "scrollama": "^2.2.2"
+    "mapbox-gl": "^2.4.0",
+    "scrollama": "^2.2.2",
+    "util": "^0.12.4"
   }
 }
