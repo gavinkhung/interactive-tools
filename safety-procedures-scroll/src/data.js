@@ -11,6 +11,7 @@ export const fetchCasesPerCity = async () => {
     const casesPerCity = await csv(
       "https://data.sccgov.org/resource/j2gj-bg6c.csv"
     );
+    console.log(casesPerCity);
     const output = [];
     if (casesPerCity && casesPerCity.length) {
       casesPerCity.map((city) => {
@@ -24,6 +25,7 @@ export const fetchCasesPerCity = async () => {
           });
         }
       });
+      console.log(output);
       return output;
     }
     return [];
