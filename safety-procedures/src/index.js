@@ -15,7 +15,7 @@ const INITIAL_VIEW_STATE = {
   longitude: -122,
   zoom: 10.5,
   minZoom: 9,
-  maxZoom: 12,
+  maxZoom: 11.5,
   maxPitch: 5,
   pitch: 0,
   bearing: 0,
@@ -75,7 +75,7 @@ const init = async () => {
         radiusMinPixels: 1,
         wrapLongitude: true,
         getPosition: (d) => [d.long, d.lat],
-        getRadius: (d) => 10,
+        getRadius: (d) => 5,
         onHover: ({ object, x, y }) => {
           const el = document.getElementById("tooltip");
           if (object) {
@@ -109,7 +109,7 @@ const init = async () => {
         data: schoolLocations,
         getPosition: (d) => [d.long, d.lat],
         getText: (d) => d.name,
-        getSize: 8,
+        getSize: 10,
         getAngle: 0,
         getTextAnchor: "middle",
         getAlignmentBaseline: "top",
