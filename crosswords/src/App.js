@@ -105,7 +105,7 @@ const App = () => {
   };
 
   return (
-    <div style={{ width: "65%" }}>
+    <div style={{ width: "100%" }}>
       <Crossword data={data} useStorage={false} />
     </div>
   );
