@@ -112,7 +112,7 @@ const App = () => {
       4: {
         clue: "Building with all the Biology classrooms",
         answer: "BBUILDING",
-        row: 6,
+        row: 5,
         col: 22,
       },
       5: {
