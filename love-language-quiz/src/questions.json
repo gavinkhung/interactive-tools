@@ -1,0 +1,186 @@
+{
+  "types": [
+    "Quality Time",
+    "Gifts",
+    "Words of Affirmation",
+    "Acts of Service",
+    "Physical Touch"
+  ],
+  "questions": [
+    {
+      "question": "If I am feeling down … ",
+      "options": [
+        { "text": "I would want to be hugged.", "type": "Physical Touch" },
+        {
+          "text": "I would want someone to tell me comforting words.",
+          "type": "Words of Affirmation"
+        },
+        {
+          "text": "I would want someone to give me their undivided attention.",
+          "type": "Quality Time"
+        },
+        { "text": "I would want a care package.", "type": "Gifts" },
+        { "text": "I would want advice.", "type": "Acts of Service" }
+      ]
+    },
+    {
+      "question": "I feel loved when ...",
+      "options": [
+        {
+          "text": "People go out of their way to help me with a task.",
+          "type": "Acts of Service"
+        },
+        {
+          "text": "Somebody gives me a hug or holds my hand.",
+          "type": "Physical Touch"
+        },
+        {
+          "text": "People tell me how they appreciate me.",
+          "type": "Words of Affirmation"
+        },
+        { "text": "People buy me gifts.", "type": "Receiving Gifts" },
+        {
+          "text": "People want to spend time with me.",
+          "type": "Quality Time"
+        }
+      ]
+    },
+    {
+      "question": "When I want to celebrate I want to … ",
+      "options": [
+        { "text": "Hang out with my friends.", "type": "Quality Time" },
+        { "text": "Give out candy to others.", "type": "Gifts" },
+        { "text": "Help others feel happy too.", "type": "Acts of Service" },
+        {
+          "text": "Be congratulated by my loved ones.",
+          "type": "Words of Affirmation"
+        },
+        { "text": "Give everyone high fives.", "type": "Physical Touch" }
+      ]
+    },
+    {
+      "question": "If I am nervous before a test ... ",
+      "options": [
+        {
+          "text": "I would want someone to hold my hand.",
+          "type": "Physical Touch"
+        },
+        {
+          "text": "I would want someone to encourage me.",
+          "type": "Words of Affirmation"
+        },
+        {
+          "text": "I would want someone to help me study.",
+          "type": "Acts of Service"
+        },
+        {
+          "text": "I would want someone to give me candy to eat during the test.",
+          "type": "Gifts"
+        },
+        {
+          "text": "I would want someone to spend tutorial with me.",
+          "type": "Quality Time"
+        }
+      ]
+    },
+    {
+      "question": "I feel most encouraged by teachers when …",
+      "options": [
+        {
+          "text": "They reassure me about myself.",
+          "type": "Words of Affirmation"
+        },
+        {
+          "text": "They spend lunch helping me learn the material.",
+          "type": "Quality Time"
+        },
+        {
+          "text": "They provide me with a lot of resources to help me study.",
+          "type": "Acts of Service"
+        },
+        { "text": "They give me small gifts.", "type": "Gifts" },
+        {
+          "text": "They pat my back or give me high fives.",
+          "type": "Physical Touch"
+        }
+      ]
+    },
+    {
+      "question": "If I went on a road trip with friends, the best part of it is …",
+      "options": [
+        {
+          "text": "Spending undivided time with my friends.",
+          "type": "Quality Time"
+        },
+        { "text": "Planning out the trip.", "type": "Acts of Service" },
+        { "text": "Leaning against my friends.", "type": "Physical Touch" },
+        {
+          "text": "My friends talking about how fun the trip is.",
+          "type": "Words of Affirmation"
+        },
+        { "text": "Buying souvenirs with each other.", "type": "Gifts" }
+      ]
+    },
+    {
+      "question": "When I move out, I will miss my parents …",
+      "options": [
+        {
+          "text": "Telling me how proud they are of me.",
+          "type": "Words of Affirmation"
+        },
+        { "text": "Patting my head.", "type": "Physical Touch" },
+        { "text": "Making me breakfast.", "type": "Acts of Service" },
+        { "text": "Spending time with me.", "type": "Quality Time" },
+        { "text": "Buying me things I want.", "type": "Gifts" }
+      ]
+    },
+    {
+      "question": "I create bonds easily with my team (sports, clubs, etc.) when …",
+      "options": [
+        { "text": "We make a handshake.", "type": "Physical Touch" },
+        { "text": "We play games together.", "type": "Quality Time" },
+        {
+          "text": "We exchange compliments.",
+          "type": "Words of Affirmation"
+        },
+        {
+          "question": "When someone brings food for our group.",
+          "type": "Gifts"
+        },
+        {
+          "question": "When someone gives me advice about my performance.",
+          "type": "Acts of Service"
+        }
+      ]
+    },
+    {
+      "question": "I express my love for my parents by …",
+      "options": [
+        { "text": "Hugging them.", "type": "Physical Touch" },
+        { "text": "Expressing gratitude. Words of Affirmation" },
+        { "text": "Doing chores.", "type": "Acts of Service" },
+        { "text": "Making them a card.", "type": "Gifts" },
+        { "text": "Having dinner together.", "type": "Quality Time" }
+      ]
+    },
+    {
+      "question": "What is a must-have when hanging out with friends?",
+      "options": [
+        { "text": "Having deep conversations", "type": "Quality Time" },
+        { "text": "A gift exchange", "type": "Gifts" },
+        {
+          "text": "Talking about qualities we believe stand out in each other",
+          "type": "Words of Affirmation"
+        },
+        {
+          "text": "Helping each other out with a problem or task",
+          "type": "Acts of Service"
+        },
+        {
+          "text": "Giving each other hugs or high fives",
+          "type": "Physical Touch"
+        }
+      ]
+    }
+  ]
+}

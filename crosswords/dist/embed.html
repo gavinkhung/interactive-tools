@@ -9,11 +9,19 @@
   <body>
     <iframe
       src="https://gavinkhung.github.io/interactive-tools/crosswords/dist"
-      style="display: block; width: 100%; min-height: 100vh"
+      width="100%"
+      height="1800"
       frameborder="0"
       scrolling="yes"
       scrolling="no"
       allowfullscreen="true"
     ></iframe>
+    <style>
+      @media only screen and (max-width: 600px) {
+        iframe {
+          height: 1600px;
+        }
+      }
+    </style>
   </body>
 </html>
