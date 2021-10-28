@@ -6,6 +6,7 @@
     "Acts of Service",
     "Physical Touch"
   ],
+  "questionsNum": 10,
   "questions": [
     {
       "question": "If I am feeling down … ",
@@ -144,11 +145,11 @@
           "type": "Words of Affirmation"
         },
         {
-          "question": "When someone brings food for our group.",
+          "text": "When someone brings food for our group.",
           "type": "Gifts"
         },
         {
-          "question": "When someone gives me advice about my performance.",
+          "text": "When someone gives me advice about my performance.",
           "type": "Acts of Service"
         }
       ]
