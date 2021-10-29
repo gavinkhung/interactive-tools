@@ -1,22 +1,15 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import Question from "./Question";
-import Context from "./Context";
+import Results from "./Results";
 
 import questions from "./questions.json";
 
-console.log(questions["questions"].length);
-
 const App = () => {
   const [questionNum, setQuestionNum] = useState(0);
-  const { responses, setResponses } = useContext(Context);
-
-  const reset = () => {
-    setQuestionNum(0);
-  };
 
   return (
-    <div className="bg-pink-300">
-      <div className="max-w-lg mx-auto px-4 py-16 space-y-1">
+    <div className="bg-pink-300 h-screen">
+      <div className="max-w-lg mx-auto my-auto px-4 py-16 space-y-1">
         <div className="w-full space-y-2">
           {questionNum < questions["questionsNum"] ? (
             questions["questions"].length &&
@@ -32,9 +25,7 @@ const App = () => {
               </>
             ))
           ) : (
-            <div>
-              <p>results</p>
-            </div>
+            <Results setQuestionNum={setQuestionNum} />
           )}
         </div>
       </div>

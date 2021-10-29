@@ -30,7 +30,7 @@ export default function Question({ question, questionNum, setQuestionNum }) {
 
   return (
     <div className="w-full space-y-4">
-      <h2 className="text-black text-lg font-semibold">
+      <h2 className="text-black text-xl font-semibold">
         {question["question"]}
       </h2>
       <p className="text-red-900">{error}</p>
