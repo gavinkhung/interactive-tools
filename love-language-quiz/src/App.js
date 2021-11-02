@@ -8,9 +8,9 @@ const App = () => {
   const [questionNum, setQuestionNum] = useState(0);
 
   return (
-    <div className="bg-pink-300 h-screen">
-      <div className="max-w-lg mx-auto my-auto px-4 py-16 space-y-1">
-        <div className="w-full space-y-2">
+    <div className="bg-pink-300 h-screen w-screen">
+      <div className="flex justify-center items-center py-12">
+        <div className="max-w-lg">
           {questionNum < questions["questionsNum"] ? (
             questions["questions"].length &&
             questions["questions"].map((question, index) => (
