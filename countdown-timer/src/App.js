@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div className="bg-background h-screen w-screen flex flex-col space-y-4 justify-center items-center ">
-      <div className="bg-white text-black font-bold text-7xl tracking-wider rounded-full h-96 w-96 flex items-center justify-center">
+      <div className="bg-white text-black font-bold text-7xl tracking-wider rounded-full h-40 w-40 flex items-center justify-center">
         {seconds <= 0 ? 0 : seconds}
       </div>
       <div className="flex flex-row space-x-6">
