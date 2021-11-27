@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       height: (theme) => ({
-        phone: "760px",
+        phone: "500px",
       }),
       width: (theme) => ({
-        phone: "400px",
+        phone: "950px",
       }),
       borderRadius: (theme) => ({
         phone: "60px",

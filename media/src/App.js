@@ -4,10 +4,13 @@ import Modal from "./Modal";
 const App = () => {
   return (
     <>
-      <div className="grid min-h-screen bg-purple-50 place-items-center">
+      <div className="grid min-h-screen bg-gradient-to-r from-gray-100 to-gray-300 place-items-center">
+        <h1 class="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+          Language in Media
+        </h1>
         <div className="mx-auto h-phone w-phone bg-gray-800 rounded-phone border-phone border-black relative overflow-hidden ring ring-purple-400 shadow-xl">
           <div className="absolute w-full h-full">
-            <div className="bg-gray-700 px-8 pt-2 flex justify-between space-x-1">
+            {/* <div className="bg-gray-700 px-8 pt-2 flex justify-between space-x-1">
               <div className="">
                 <p className="text-white text-md">11:11</p>
               </div>
@@ -33,7 +36,7 @@ const App = () => {
                   />
                 </svg>
               </div>
-            </div>
+            </div> */}
 
             <div className="bg-gray-700 pt-2 flex flex-col items-center">
               <span className="bg-gray-500 h-8 w-8 rounded-full text-white flex items-center justify-center">
@@ -43,14 +46,19 @@ const App = () => {
               <p className="my-1 text-white text-md font-light">El Estoque</p>
             </div>
 
-            <div className="relative mt-4 mx-2 space-y-3">
-              <p className="text-center text-gray-300 text-md font-light">
+            <div className="relative mt-1 mx-2 space-y-3">
+              <p className="text-center text-gray-300 text-sm font-light">
                 Mon, Dec 15, 11:11 PM
               </p>
-              <TextMessage />
-              <TextMessage />
-              <TextMessage />
-              <TextMessage />
+
+              <div className="grid grid-cols-2 gap-2 px-8">
+                <TextMessage />
+                <TextMessage />
+                <TextMessage />
+                <TextMessage />
+                <TextMessage />
+                <TextMessage />
+              </div>
             </div>
           </div>
 
@@ -59,10 +67,11 @@ const App = () => {
               <div className="mx-auto h-1 w-28 rounded bg-white"></div>
             </div>
           </div>
-          <div className="relative top-0 inset-x-0">
-            <div className="mx-auto bg-black h-6 w-40 rounded-b-3xl"></div>
+          <div className="h-full absolute top-1/4 left-0">
+            <div className="my-auto bg-black h-1/2 w-6 rounded-tr-3xl rounded-br-3xl"></div>
           </div>
         </div>
+        <div className=""></div>
       </div>
     </>
   );
