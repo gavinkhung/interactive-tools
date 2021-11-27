@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useRef } from "react";
 import { useFrame, useThree, useLoader } from "@react-three/fiber";
 import { Stars } from "@react-three/drei";
 import * as THREE from "three";
@@ -9,9 +9,7 @@ import EarthSpecularMap from "./assets/textures/8k_earth_specular_map.jpeg";
 import EarthCloudsMap from "./assets/textures/8k_earth_clouds.jpeg";
 import { TextureLoader } from "three";
 
-import Context from "./Context";
-
-export function Earth(props) {
+export function Earth({ zoom }) {
   const [colorMap, normalMap, specularMap, cloudsMap] = useLoader(
     TextureLoader,
     [EarthDayMap, EarthNormalMap, EarthSpecularMap, EarthCloudsMap]
@@ -20,22 +18,20 @@ export function Earth(props) {
   const earthRef = useRef();
   const cloudsRef = useRef();
 
-  const a = useContext(Context);
   useFrame(({ camera, clock }) => {
-    console.log(a);
     // if (zoom != camera.zoom) {
     //   if (zoom < camera.zoom) {
     //     camera.zoom -= 0.01;
+    //     camera.updateProjectionMatrix();
     //   } else {
     //     camera.zoom += 0.01;
+    //     camera.updateProjectionMatrix();
     //   }
     // }
     const elapsedTime = clock.getElapsedTime();
 
     earthRef.current.rotation.y = elapsedTime / 24;
     cloudsRef.current.rotation.y = elapsedTime / 24;
-
-    camera.updateProjectionMatrix();
   });
 
   return (
@@ -50,7 +46,7 @@ export function Earth(props) {
         fade={true}
       />
       <mesh ref={cloudsRef} position={[0, 0, 3]}>
-        <sphereGeometry args={[1.005, 32, 32]} />
+        <sphereGeometry args={[1.005, 24, 24]} />
         <meshPhongMaterial
           map={cloudsMap}
           opacity={0.4}
@@ -60,7 +56,7 @@ export function Earth(props) {
         />
       </mesh>
       <mesh ref={earthRef} position={[0, 0, 3]}>
-        <sphereGeometry args={[1, 32, 32]} />
+        <sphereGeometry args={[1, 24, 24]} />
         <meshPhongMaterial specularMap={specularMap} />
         <meshStandardMaterial
           map={colorMap}
