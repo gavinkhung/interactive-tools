@@ -4,8 +4,11 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import "./styles.css";
 
-ReactDOM.render(<div class="overflow-hidden">
+ReactDOM.render(
+  <div class="overflow-hidden">
     <App />
-</div>, document.getElementById("app"));
+  </div>,
+  document.getElementById("app")
+);
 
 module.hot.accept();
