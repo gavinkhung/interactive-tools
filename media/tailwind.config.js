@@ -29,19 +29,23 @@ module.exports = {
           "0%": { backgroundColor: "black" },
           "100%": { backgroundColor: "transparent" },
         },
+
         disappear: {
           "0%": { display: "block" },
+          "50%": {
+            backgroundColor: "transparent",
+          },
           "100%": {
             display: "none",
-            backgroundColor: "transparent",
             zIndex: "0",
+            backgroundColor: "transparent",
           },
         },
       },
       animation: {
         on: "on 1s ease-in-out 0s 1 normal forwards",
-        disappear: "disappear 1s ease-in-out 0s 1 normal forwards",
-        fade: "fade 1s ease-in-out 5s 1 normal forwards",
+        disappear: "disappear 2s ease-in-out 0s 1 normal forwards",
+        fade: "fade 1s ease-in-out 0s 1 normal forwards",
       },
     },
   },

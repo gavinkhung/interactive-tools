@@ -92,12 +92,12 @@ const App = () => {
             <div className="h-full absolute top-1/4 left-0">
               <div className="my-auto bg-black h-1/2 w-6 rounded-tr-3xl rounded-br-3xl"></div>
             </div> */}
-            <div className="absolute bottom-0 inset-x-0 h-20">
+            <div className="absolute bottom-0 inset-x-0 h-20 z-10">
               <div className="absolute bottom-1 inset-x-0">
                 <div className="mx-auto h-1 w-28 rounded bg-white"></div>
               </div>
             </div>
-            <div className="relative top-0 inset-x-0 bg-black rounded-tr-phone rounded-tl-phone animate-on animate-delay-1000">
+            <div className="relative top-0 inset-x-0 bg-black rounded-tr-phone rounded-tl-phone animate-on animate-delay-1000 z-10">
               <div className="mx-auto bg-black h-6 w-40 rounded-b-3xl"></div>
             </div>
             <div className="absolute w-full h-full bg-black animate-disappear animate-delay-1000 z-20"></div>
