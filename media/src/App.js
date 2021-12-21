@@ -4,7 +4,23 @@ const App = () => {
   return (
     <div className="font-bodoni">
       <div className="flex flex-col items-center min-h-screen bg-gradient-to-r from-gray-100 to-gray-300 space-y-2 pt-4">
-        <h1 className="flex-none h-14 text-5xl font-bold">Language in Media</h1>
+        <div className="flex-none flex flex-row justify-between w-full px-2">
+          <a
+            href="https://elestoque.org/"
+            className="text-lg text-black underline"
+          >
+            Back to El Estoque
+          </a>
+          <h1 className="flex-none h-14 text-5xl font-bold">
+            Language in Media
+          </h1>
+          <a
+            href="https://elestoque.org/"
+            className="text-lg text-black underline opacity-0"
+          >
+            Back to El Estoque
+          </a>
+        </div>
         <div className="grow">
           <div className="mx-auto w-phone h-phone bg-gray-800 rounded-phone border-phone border-black relative ring ring-purple-400 shadow-xl">
             <div className="absolute w-full h-full z-10">
