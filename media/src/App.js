@@ -3,7 +3,7 @@ import React from "react";
 const App = () => {
   return (
     <div className="font-bodoni">
-      <div className="flex flex-col items-center min-h-screen bg-gradient-to-r from-gray-100 to-gray-300 space-y-2 pt-4">
+      <div className="flex flex-col items-center min-h-screen bg-gradient-to-r from-gray-100 to-gray-300 space-y-2 pt-2">
         <div className="flex-none flex flex-row justify-between w-full px-2">
           <a
             href="https://elestoque.org/"
@@ -11,9 +11,19 @@ const App = () => {
           >
             Back to El Estoque
           </a>
-          <h1 className="flex-none h-14 text-5xl font-bold">
-            Language in Media
-          </h1>
+          <div className="space-y-1 flex flex-col max-w-5xl">
+            <h1 className="flex-none text-5xl font-bold text-center">
+              Language in Media
+            </h1>
+            {/* <h2 className="text-gray-800 text-center text-sm">
+              As internet usage grows worldwide, the rhetoric used in modern
+              media permeates our daily lives and has significant implications
+              on the ways we communicate. To delve deeper into topics like the
+              detriments of an English-centered internet, the evolution of
+              internet humor and the linguistic appropriation of AAVE, read El
+              Estoque's language in media package below.
+            </h2> */}
+          </div>
           <a
             href="https://elestoque.org/"
             className="text-lg text-black underline opacity-0"
@@ -64,18 +74,39 @@ const App = () => {
                   {new Date().toLocaleString()}
                 </p>
                 <div className="grid grid-cols-1 gap-2 px-4">
-                  {/* <div class="">
-                    <div className="p-2 bg-gray-500 hover:bg-gray-600 cursor-pointer backdrop-blur-md filter rounded-xl shadow w-5/6">
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <div
+                      className={`p-2 bg-gray-500 hover:bg-gray-600 cursor-pointer backdrop-blur-md filter rounded-2xl shadow w-5/6 opacity-0 animate-fade animation-delay-500`}
+                    >
                       <div className="flex flex-row space-x-2">
-                        <div className="">
-                          <h3 className="text-md font-bold text-gray-100">
-                            Headline 1
+                        <div className="flex-1">
+                          <h3 className="text-xs text-gray-100">
+                            As internet usage grows worldwide, the rhetoric used
+                            in modern media permeates our daily lives and has
+                            significant implications on the ways we communicate.
                           </h3>
-                          <p className="mt-0.5 text-sm text-gray-300">Deck 1</p>
                         </div>
                       </div>
                     </div>
-                  </div> */}
+                  </a>
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <div
+                      className={`p-2 bg-gray-500 hover:bg-gray-600 cursor-pointer backdrop-blur-md filter rounded-2xl shadow w-5/6 opacity-0 animate-fade animation-delay-500`}
+                    >
+                      <div className="flex flex-row space-x-2">
+                        <div className="flex-1">
+                          <h3 className="text-xs text-gray-100">
+                            To delve deeper into topics like the detriments of
+                            an English-centered internet, the evolution of
+                            internet humor and the linguistic appropriation of
+                            AAVE, read El Estoque's language in media package
+                            below.
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
                   <TextMessage
                     url="https://elestoque.org/2021/12/10/uncategorized/an-english-centered-internet-causes-miscommunication-misinformation-and-isolation/"
                     imgUrl="english.png"
@@ -95,7 +126,7 @@ const App = () => {
                   <TextMessage
                     url="https://elestoque.org/2021/12/11/uncategorized/giving-credit-where-its-due/"
                     imgUrl="aave.png"
-                    headline="Giving credit where it’s due"
+                    headline="Giving credit where it's due"
                     deck="Examining the linguistic appropriation of AAVE in modern rhetoric"
                     animation="opacity-0 animate-fade animation-delay-2000"
                   />
@@ -129,7 +160,7 @@ const TextMessage = ({ imgUrl, url, headline, deck, animation }) => {
           <div className="flex flex-row space-x-2">
             <div className="">
               <img
-                className="w-36 h-36 rounded-xl object-cover"
+                className="w-28 h-28 rounded-xl object-cover"
                 src={imgUrl}
                 alt=""
               />
