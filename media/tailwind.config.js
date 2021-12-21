@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     extend: {
       height: (theme) => ({
-        phone: "500px",
+        // phone: "550px",
+        phone: "1045px",
       }),
       width: (theme) => ({
-        phone: "950px",
+        // phone: "1045px",
+        phone: "550px",
       }),
       borderRadius: (theme) => ({
         phone: "60px",
@@ -15,6 +17,9 @@ module.exports = {
       borderWidth: (theme) => ({
         phone: "14px",
       }),
+      fontFamily: {
+        'bodoni': ['Bodoni','sans']
+      }
     },
   },
   variants: {

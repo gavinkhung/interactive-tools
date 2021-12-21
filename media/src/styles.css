@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Bodoni';
+  font-weight: normal;
+  src: url(./bodoni.ttf) format('ttf');
+}
+
+
+@font-face {
+  font-family: 'Bodoni';
+  font-weight: 700;
+  src: url(./bodoni-bold.ttf) format('ttf');
+}

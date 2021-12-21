@@ -7705,7 +7705,7 @@ video {
 }
 
 .h-phone {
-  height: 760px;
+  height: 1045px;
 }
 
 .max-h-0 {
@@ -8133,7 +8133,7 @@ video {
 }
 
 .w-phone {
-  width: 400px;
+  width: 550px;
 }
 
 .min-w-0 {
@@ -23618,6 +23618,10 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-bodoni {
+  font-family: Bodoni, sans;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -31226,6 +31230,22 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@font-face {
+  font-family: 'Bodoni';
+
+  font-weight: normal;
+
+  src: url(436dfb896540381b5a5f.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Bodoni';
+
+  font-weight: 700;
+
+  src: url(2c179bac642d137a6d28.ttf) format('ttf');
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -38369,7 +38389,7 @@ video {
   }
 
   .sm\:h-phone {
-    height: 760px;
+    height: 1045px;
   }
 
   .sm\:max-h-0 {
@@ -38797,7 +38817,7 @@ video {
   }
 
   .sm\:w-phone {
-    width: 400px;
+    width: 550px;
   }
 
   .sm\:min-w-0 {
@@ -54251,6 +54271,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-bodoni {
+    font-family: Bodoni, sans;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -68990,7 +69014,7 @@ video {
   }
 
   .md\:h-phone {
-    height: 760px;
+    height: 1045px;
   }
 
   .md\:max-h-0 {
@@ -69418,7 +69442,7 @@ video {
   }
 
   .md\:w-phone {
-    width: 400px;
+    width: 550px;
   }
 
   .md\:min-w-0 {
@@ -84872,6 +84896,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:font-bodoni {
+    font-family: Bodoni, sans;
+  }
+
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -99611,7 +99639,7 @@ video {
   }
 
   .lg\:h-phone {
-    height: 760px;
+    height: 1045px;
   }
 
   .lg\:max-h-0 {
@@ -100039,7 +100067,7 @@ video {
   }
 
   .lg\:w-phone {
-    width: 400px;
+    width: 550px;
   }
 
   .lg\:min-w-0 {
@@ -115493,6 +115521,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-bodoni {
+    font-family: Bodoni, sans;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -130232,7 +130264,7 @@ video {
   }
 
   .xl\:h-phone {
-    height: 760px;
+    height: 1045px;
   }
 
   .xl\:max-h-0 {
@@ -130660,7 +130692,7 @@ video {
   }
 
   .xl\:w-phone {
-    width: 400px;
+    width: 550px;
   }
 
   .xl\:min-w-0 {
@@ -146114,6 +146146,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-bodoni {
+    font-family: Bodoni, sans;
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -160853,7 +160889,7 @@ video {
   }
 
   .\32xl\:h-phone {
-    height: 760px;
+    height: 1045px;
   }
 
   .\32xl\:max-h-0 {
@@ -161281,7 +161317,7 @@ video {
   }
 
   .\32xl\:w-phone {
-    width: 400px;
+    width: 550px;
   }
 
   .\32xl\:min-w-0 {
@@ -176735,6 +176771,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .\32xl\:font-bodoni {
+    font-family: Bodoni, sans;
+  }
+
   .\32xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -184330,4 +184370,3 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
