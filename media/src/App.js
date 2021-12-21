@@ -3,14 +3,16 @@ import React from "react";
 const App = () => {
   return (
     <div className="font-bodoni">
-      <div className="flex flex-col items-center min-h-screen bg-gradient-to-r from-gray-100 to-gray-300 space-y-6 py-2">
+      <div className="flex flex-col items-center min-h-screen bg-gradient-to-r from-gray-100 to-gray-300 space-y-2 pt-4">
         <h1 className="flex-none h-14 text-5xl font-bold">Language in Media</h1>
         <div className="grow">
           <div className="mx-auto w-phone h-phone bg-gray-800 rounded-phone border-phone border-black relative ring ring-purple-400 shadow-xl">
             <div className="absolute w-full h-full z-10">
               <div className="bg-gray-700 px-8 pt-2 flex justify-between space-x-1 rounded-tr-phone rounded-tl-phone">
                 <div className="">
-                  <p className="text-white text-md">11:11</p>
+                  <p className="text-white text-md">
+                    {`${new Date().getHours() % 12}:${new Date().getMinutes()}`}
+                  </p>
                 </div>
                 <div className="flex flex-row space-x-1">
                   <svg
@@ -43,7 +45,7 @@ const App = () => {
               </div>
               <div className="relative mt-1 mx-2 space-y-3">
                 <p className="text-center text-gray-300 text-sm font-light">
-                  Mon, Dec 15, 11:11 PM
+                  {new Date().toLocaleString()}
                 </p>
                 <div className="grid grid-cols-1 gap-2 px-4">
                   {/* <div class="">
@@ -84,14 +86,7 @@ const App = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="absolute bottom-0 inset-x-0 h-20">
-              <div className="absolute bottom-1 inset-x-0">
-                <div className="mx-auto h-1 w-28 rounded bg-white"></div>
-              </div>
-            </div>
-            <div className="h-full absolute top-1/4 left-0">
-              <div className="my-auto bg-black h-1/2 w-6 rounded-tr-3xl rounded-br-3xl"></div>
-            </div> */}
+
             <div className="absolute bottom-0 inset-x-0 h-20 z-10">
               <div className="absolute bottom-1 inset-x-0">
                 <div className="mx-auto h-1 w-28 rounded bg-white"></div>
