@@ -66,57 +66,28 @@ function App() {
   }, [zoom]);
 
   return (
-    <div className="w-full h-screen space-y-12 flex flex-col">
-      <h1 className="flex-none pt-4 text-white text-5xl text-center">
-        Climate Change
+    <div className="w-full h-screen space-y-12 flex flex-col bg-blue-100 space-y-12">
+      <h1 className="flex-none text-black pt-4 text-center uppercase text-2xl md:text-6xl font-extrabold">
+        Addressing climate change
       </h1>
-      <div className="grow flex flex-row">
-        <div className="flex-1 space-y-5 mx-5">
+      <div className="grow flex flex-row mx-10 pb-10">
+        <div className="flex-1 space-y-5">
           <div className="space-y-3">
             <div className="flex flex-col space-y-3">
-              <h2 className="text-4xl text-white">
+              <h2 className="text-4xl text-gray-800 font-bold">
                 {selectedArticle["headline"]}
               </h2>
-              <h3 className="text-2xl text-gray-200">
+              <h3 className="text-2xl text-gray-700 font-semibold">
                 {selectedArticle["deck"]}
               </h3>
             </div>
             <div className="flex justify-center items-center ">
               <img className="w-96" src={selectedArticle["imageUrl"]} alt="" />
             </div>
-            {/* {articles.map((article) => (
-              <div className="p-4 bg-gray-500 hover:bg-gray-600 cursor-pointer backdrop-blur-md filter rounded-3xl shadow">
-                <a
-                  href={article["url"]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=""
-                >
-                  <div className="flex flex-row space-x-2">
-                    <div className="">
-                      <img
-                        className="w-20 h-20 rounded-xl object-cover"
-                        src={article["imageUrl"]}
-                        alt=""
-                      />
-                    </div>
-                    <div className="">
-                      <h3 className="text-md font-bold text-gray-100">
-                        {article["headline"]}
-                      </h3>
-                      <p className="mt-0.5 text-sm text-gray-300">
-                        {" "}
-                        {article["deck"]}
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            ))} */}
           </div>
         </div>
 
-        <div className="flex flex-1 py-4">
+        <div className="flex flex-row justify-center flex-1 py-4">
           <div className="">
             <input
               type="range"
