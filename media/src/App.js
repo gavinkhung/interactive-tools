@@ -111,7 +111,7 @@ const App = () => {
                     url="https://elestoque.org/2021/12/10/uncategorized/an-english-centered-internet-causes-miscommunication-misinformation-and-isolation/"
                     imgUrl="english.png"
                     headline="An English-centered Internet causes miscommunication, misinformation and isolation"
-                    deck="Examining how English being the Internet’s primary language affects users"
+                    deck="Examining how English being the Internet's primary language affects users"
                     animation="opacity-0 animate-fade animation-delay-1000"
                   />
 

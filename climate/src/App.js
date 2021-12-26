@@ -66,23 +66,52 @@ function App() {
   }, [zoom]);
 
   return (
-    <div className="w-full h-screen space-y-12 flex flex-col bg-blue-100 space-y-12">
-      <h1 className="flex-none text-black pt-4 text-center uppercase text-2xl md:text-6xl font-extrabold">
-        Addressing climate change
-      </h1>
-      <div className="grow flex flex-row mx-10 pb-10">
+    <div className="w-full min-h-screen flex flex-col bg-blue-100">
+      <div className="flex-none flex flex-row justify-between items-center w-full px-2">
+        <a
+          href="https://elestoque.org/"
+          className="text-md text-black underline font-trebuchet"
+        >
+          Back to El Estoque
+        </a>
+        <div className="space-y-1 flex flex-col max-w-5xl">
+          <h1 className="flex-none text-black py-2 text-center uppercase text-2xl md:text-5xl font-extrabold font-oswald">
+            Addressing climate change
+          </h1>
+        </div>
+        <a
+          href="https://elestoque.org/"
+          className="text-md text-black underline opacity-0"
+        >
+          Back to El Estoque
+        </a>
+      </div>
+      <p className="flex-none text-gray-800 pb-16 text-center text-lg md:text-2xl font-oswald">
+        Examining the approach to climate change on four different levels
+      </p>
+      <div className="grow flex flex-col md:flex-row mx-10 pb-10">
         <div className="flex-1 space-y-5">
           <div className="space-y-3">
             <div className="flex flex-col space-y-3">
-              <h2 className="text-4xl text-gray-800 font-bold">
+              <h2 className="text-3xl text-gray-800 font-bold font-trebuchet">
                 {selectedArticle["headline"]}
               </h2>
-              <h3 className="text-2xl text-gray-700 font-semibold">
+              <h3 className="text-xl text-gray-600 font-semibold font-trebuchet">
                 {selectedArticle["deck"]}
               </h3>
             </div>
-            <div className="flex justify-center items-center ">
-              <img className="w-96" src={selectedArticle["imageUrl"]} alt="" />
+            <div className="flex justify-center items-center">
+              <a
+                target="_blank"
+                href={selectedArticle["url"]}
+                className="text-gray-800"
+              >
+                <img
+                  className="w-96"
+                  src={selectedArticle["imageUrl"]}
+                  alt=""
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -108,11 +137,11 @@ function App() {
           </div>
           <div className="flex flex-col justify-between h-full">
             {articles.map((article, index) => (
-              <div className="p-4 bg-white hover:bg-gray-200 cursor-pointer backdrop-blur-md filter rounded-3xl shadow">
+              <div className="px-4 py-3 bg-white hover:bg-gray-100 cursor-pointer backdrop-blur-md filter rounded-xl shadow text-center">
                 <a
                   target="_blank"
                   href={article["url"]}
-                  className="text-gray-800"
+                  className="text-gray-800 font-trebuchet"
                 >
                   {articles[articles.length - 1 - index]["level"]}
                 </a>

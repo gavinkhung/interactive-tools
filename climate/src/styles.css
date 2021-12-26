@@ -11,6 +11,35 @@ body,
   padding: 0;
 }
 
+@font-face {
+  font-family: "Oswald";
+  font-weight: bolder;
+  src: url(./Oswald-Bold.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: bold;
+  src: url(./Oswald-SemiBold.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  src: url(./Oswald-Medium.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: lighter;
+  src: url(./Oswald-Light.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Trebuchet";
+  src: url(./Trebuchet.ttf) format("ttf");
+}
+
 input[type="range"] {
   writing-mode: bt-lr;
   -webkit-appearance: slider-vertical;
