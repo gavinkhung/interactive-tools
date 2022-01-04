@@ -76,13 +76,13 @@ function App() {
         </a>
       </div>
       <div className="grow space-y-1 flex flex-col">
-        <h1 className="flex-none text-black py-2 text-center uppercase text-2xl md:text-5xl font-extrabold font-oswald">
-          Addressing climate change
+        <h1 className="flex-none text-black py-2 text-center text-2xl md:text-5xl font-extrabold font-oswald">
+          Addressing Climate Change
         </h1>
-        <p className="flex-none text-gray-800 text-center text-lg md:text-2xl font-oswald">
+        <p className="flex-none text-gray-800 text-center text-lg md:text-3xl font-oswald">
           Examining the approach to climate change on four different levels
         </p>
-        <p className="flex-none text-gray-700 pb-16 text-center text-lg md:text-2xl font-oswald">
+        <p className="flex-none text-gray-700 pb-16 text-center text-md md:text-xl font-oswald tracking-tightest">
           By:{" "}
           <a
             href="https://elestoque.org/staff_name/michelle-chen/"
