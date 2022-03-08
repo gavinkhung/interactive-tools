@@ -183,7 +183,7 @@ function App() {
                 <div className="px-4 py-3 bg-white hover:bg-gray-100 cursor-pointer backdrop-blur-md filter rounded-xl shadow text-center">
                   <a
                     target="_blank"
-                    href={article["url"]}
+                    href={articles[articles.length - 1 - index]["url"]}
                     className="text-gray-800 font-trebuchet"
                   >
                     {articles[articles.length - 1 - index]["level"]}

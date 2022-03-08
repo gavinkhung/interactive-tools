@@ -28,7 +28,7 @@ const App = () => {
   const [playing, toggle] = useAudio("Intro.mp3");
 
   return (
-    <div className="bg-blue-200 h-screen w-screen flex flex-col justify-around px-24">
+    <div className="flex flex-col justify-around w-screen h-screen px-24 bg-blue-200">
       <Confetti
         width={width}
         height={height}
@@ -48,43 +48,79 @@ const App = () => {
       />
 
       <div className="">
-        <h1 className="uppercase text-center text-2xl md:text-6xl text-white font-extrabold">
+        <h1 className="text-2xl font-extrabold text-center text-white uppercase md:text-6xl">
           Winter Sports
         </h1>
       </div>
-      <div className="grid grid-cols-2 gap-24">
-        <Article url="." />
-        <Article url="." />
-        <Article url="." />
-        <Article url="." />
+      <div className="grid grid-cols-2 gap-12">
+        <Article
+          deck="Examining the ups and downs of skiing"
+          headline="MVHS students share about their experiences on the hill"
+          img="./photo4.png"
+          url="https://elestoque.org/2021/12/10/uncategorized/examining-the-ups-and-downs-of-skiing/"
+        />
+        <Article
+          deck="Skaters glide on ice"
+          headline="Figure skaters reflect on their journey in the rink"
+          img="./photo3.png"
+          url="https://elestoque.org/2021/12/06/uncategorized/skaters-glide-on-ice/"
+        />
+        <Article
+          deck="Pass the puck"
+          headline="Students describe their experiences playing hockey"
+          img="./photo2.png"
+          url="https://elestoque.org/2022/02/11/uncategorized/pass-the-puck"
+        />
+        {/* 
+        <Article
+          deck="Examining the ups and downs of skiing"
+          headline="MVHS students share about their experiences on the hill"
+          img="https://elestoque.org/wp-content/uploads/2021/12/skiing-600x900.jpg"
+          url="https://elestoque.org/2021/12/10/uncategorized/examining-the-ups-and-downs-of-skiing/"
+        />
+        <Article
+          deck="Skaters glide on ice"
+          headline="Figure skaters reflect on their journey in the rink"
+          img="https://elestoque.org/wp-content/uploads/2021/12/IMG_3987-e1638817058116.jpg"
+          url="https://elestoque.org/2021/12/06/uncategorized/skaters-glide-on-ice/"
+        />
+        <Article
+          deck="Pass the puck"
+          headline="Students describe their experiences playing hockey"
+          img="https://elestoque.org/wp-content/uploads/2022/02/Image-from-iOS-1.jpg"
+          url="https://elestoque.org/2022/02/11/uncategorized/pass-the-puck"
+      /> */}
       </div>
-      <div className="mx-auto">
+      {/* <div className="mx-auto">
         <button
           onClick={toggle}
-          className="text-center focus:outline-none text-black text-xl py-2 px-3 rounded-md bg-gray-100 hover:bg-gray-200 hover:shadow-lg font-medium"
+          className="px-3 py-2 text-xl font-medium text-center text-black bg-gray-100 rounded-md focus:outline-none hover:bg-gray-200 hover:shadow-lg"
         >
           {playing ? "Disable Sound" : "Enable Sound"}
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-const Article = ({ url }) => {
+const Article = ({ deck, headline, img, url }) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className="">
-      <div className="p-4 bg-gray-400 hover:bg-gray-400 cursor-pointer backdrop-blur-md filter rounded-3xl shadow">
+      <div className="p-4 bg-gray-400 shadow cursor-pointer hover:bg-gray-400 backdrop-blur-md filter rounded-3xl">
         <div className="flex flex-row space-x-2">
           <div className="">
             <img
-              className="h-36 rounded-xl object-cover"
-              src="https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd?auto=format&fit=crop&w=1160&q=80"
+              // className="object-cover h-48 w-72 rounded-xl"
+              className="object-cover h-56 w-96 rounded-xl"
+              src={img}
               alt=""
             />
           </div>
           <div className="">
-            <h3 className="text-md font-bold text-gray-100">Headline 1</h3>
-            <p className="mt-0.5 text-sm text-gray-300">Deck 1</p>
+            <h3 className="text-xl font-bold text-gray-100">{deck}</h3>
+            <p className="mt-0.5 text-lg text-gray-300">{headline}</p>
+            {/* <h3 className="font-bold text-gray-100 text-md">{deck}</h3>
+            <p className="mt-0.5 text-sm text-gray-300">{headline}</p> */}
           </div>
         </div>
       </div>
